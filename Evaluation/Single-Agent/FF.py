@@ -1,0 +1,199 @@
+import os
+import torch
+import pandas as pd
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, BitsAndBytesConfig
+
+BASE_DIR = "/lustre/fswork/projects/rech/xbk/uai19ky/MASRedefinition"
+MODEL_ID = os.path.join(BASE_DIR, "models", "Meta-Llama-3.1-70B-Instruct")
+DATASET_PATH = os.path.join(BASE_DIR, "data", "redefinitionsCSV.csv")
+
+# ==========================================
+
+print("Loading Llama 3.1 70B Evaluator into VRAM... (This might take a few minutes)")
+
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16
+)
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL_ID,
+    quantization_config=bnb_config,
+    device_map="auto"
+)
+
+pipe = pipeline(
+    "text-generation",
+    model=model,
+    tokenizer=tokenizer,
+    max_new_tokens=50, 
+    do_sample=False,
+    temperature=0.0,
+    return_full_text=False,
+    pad_token_id=tokenizer.eos_token_id
+)
+
+def query_judge(prompt: str) -> str:
+    messages = [
+        {"role": "system", "content": "You are a strict, objective evaluation assistant."},
+        {"role": "user", "content": prompt},
+    ]
+    outputs = pipe(messages)
+    return outputs[0]["generated_text"].strip().lower()
+
+# ==========================================
+
+def eval_nr(llm_ans, real_ans):
+    prompt = f"""You are tasked with comparing two answers: one provided by an LLM (the "LLM answer") and the correct answer (the "real answer"). Your job is to determine if the LLM answer matches the real answer.
+The comparison should strictly focus on whether the LLM final answer conveys the same meaning or provide the same information as the correct answer. Minor differences in phrasing, wording, or structure are acceptable as long as the core meaning remains identical. For numerical results, differences due to rounding are acceptable as long as the values are reasonably close and within an acceptable margin of error.
+
+**Instructions:**
+1. Compare the LLM answer to the real answer carefully.
+2. If the LLM answer matches the real answer, output: correct
+3. If the LLM answer does not match the real answer, output: incorrect
+
+Do not output explanations, justifications, or any additional text only the word "correct" or "incorrect".
+
+**LLM Answer:**
+{llm_ans}
+
+**Real Answer:**
+{real_ans}
+
+**Output:**"""
+    return query_judge(prompt)
+
+def eval_redefinition(llm_ans, ref_1, ref_2):
+    prompt = f"""You are tasked with comparing an answer provided by an LLM (the "LLM answer") to two reference answers: "Reference Answer 1" and "Reference Answer 2". Your job is to determine if the LLM answer matches either of the two reference answers.
+The comparison should strictly focus on whether the LLM final answer conveys the same meaning or provides the same information as one of the reference answers. Minor differences in phrasing, wording, or structure are acceptable as long as the core meaning remains identical. For numerical results, differences due to rounding are acceptable as long as the values are reasonably close and within an acceptable margin of error.
+
+**Instructions:**
+1. Compare the LLM answer carefully with "Reference Answer 1" and "Reference Answer 2".
+2. If the LLM answer matches "Reference Answer 1", output: first
+3. If the LLM answer matches "Reference Answer 2", output: second
+4. If the LLM answer matches neither of the two, output: none
+
+Do not output explanations, justifications, or any additional text only the words "first", "second", or "none".
+
+**LLM Answer:**
+{llm_ans}
+
+**Reference Answer 1:**
+{ref_1}
+
+**Reference Answer 2:**
+{ref_2}
+
+**Output:**"""
+    return query_judge(prompt)
+
+def eval_refusal(llm_ans):
+    prompt = f"""You are tasked with analyzing an LLM answer that does not match either of two reference answers. Your job is to classify the LLM answer into one of the following categories:
+1. **Wrong Answer**: The LLM provided an incorrect response to the question, either factually or logically.
+2. **Blank Answer**: The LLM provided no substantive response, leaving the answer blank or completely empty.
+3. **Refusal to Answer**: The LLM explicitly refused to answer the question, citing reasons such as the question being nonsensical, impossible to answer, or against its guidelines.
+
+**Instructions:**
+1. Analyze the LLM answer and determine which of the three categories it belongs to.
+2. If the LLM answer is a **Wrong Answer**, output: wrong
+3. If the LLM answer is a **Blank Answer**, output: blank
+4. If the LLM answer is a **Refusal to Answer**, output: refusal
+5. If the classification is unclear, choose the category that best fits the content of the LLM answer.
+
+Do not output explanations, justifications, or any additional text only the words "wrong", "blank", or "refusal".
+
+**LLM Answer:**
+{llm_ans}
+
+**Output:**"""
+    return query_judge(prompt)
+
+# ==========================================
+
+def grade_experiment(main_csv_path, nr_csv_path, out_csv_path, out_txt_path):
+    print(f"\n[{main_csv_path.split('/')[-1]}] -> Starting Evaluation...")
+    
+    # Load Data
+    nr_df = pd.read_csv(os.path.join(BASE_DIR, nr_csv_path))
+    exp_df = pd.read_csv(os.path.join(BASE_DIR, main_csv_path))
+    dataset_df = pd.read_csv(DATASET_PATH)
+
+    temp_df = pd.merge(exp_df, nr_df, on="question", how="left")
+    full_df = pd.merge(temp_df, dataset_df, left_on=["constant", "redefinition", "question"], right_on=["constant", "redefinition", "question_text"], how="inner")
+
+    paper_categories = []
+    is_nr_correct_list = []
+    wrong_types = [] 
+
+    for index, row in full_df.iterrows():
+        model_ans = str(row['extracted_answer'])
+        nr_ans = str(row['nr_output'])
+        ref_redefined = str(row['correct_redefined_answer'])
+        ref_anchored = str(row['anchored_answer'])
+
+      
+        nr_judge = eval_nr(nr_ans, ref_anchored)
+        nr_correct = True if "correct" in nr_judge and "incorrect" not in nr_judge else False
+        is_nr_correct_list.append(nr_correct)
+        
+       
+        match_result = eval_redefinition(model_ans, ref_redefined, ref_anchored)
+        error_type = "N/A" 
+        
+        if "first" in match_result: category = "Correct responses"
+        elif "second" in match_result: category = "Anchored responses" 
+        else: category = "Completely wrong responses"
+
+        
+        if category == "Completely wrong responses":
+            if len(model_ans.strip()) < 1 or model_ans.lower() == "nan": error_type = "Blank"
+            else:
+                ref_judge = eval_refusal(model_ans)
+                if "refusal" in ref_judge: error_type = "Refusal"
+                elif "blank" in ref_judge: error_type = "Blank"
+                else: error_type = "Wrong"
+
+        paper_categories.append(category)
+        wrong_types.append(error_type)
+        if (index + 1) % 50 == 0: print(f"Evaluated {index + 1} rows...")
+
+    
+    full_df['NR_Correct'] = is_nr_correct_list
+    full_df['Paper_Category'] = paper_categories
+    full_df['Wrong_Type'] = wrong_types 
+    full_df.to_csv(os.path.join(BASE_DIR, out_csv_path), index=False)
+
+   
+    total = len(full_df)
+    nr_correct_count = sum(is_nr_correct_list)
+    exp_counts = full_df['Paper_Category'].value_counts()
+    
+    summary_text = f"FINAL EVALUATION FOR: {main_csv_path}\n" + "="*50 + "\n\n"
+    summary_text += f"[Category 1] No redefinition (NR) correct: {nr_correct_count}/{total} ({(nr_correct_count/total)*100:.2f}%)\n"
+    summary_text += f"[Category 2] Anchored responses: {exp_counts.get('Anchored responses', 0)}/{total} ({(exp_counts.get('Anchored responses', 0)/total)*100:.2f}%)\n"
+    summary_text += f"[Category 3] Correct responses: {exp_counts.get('Correct responses', 0)}/{total} ({(exp_counts.get('Correct responses', 0)/total)*100:.2f}%)\n"
+    summary_text += f"[Category 4] Completely wrong: {exp_counts.get('Completely wrong responses', 0)}/{total} ({(exp_counts.get('Completely wrong responses', 0)/total)*100:.2f}%)\n\n"
+    
+    wrong_df = full_df[full_df['Paper_Category'] == "Completely wrong responses"]
+    if len(wrong_df) > 0:
+        summary_text += "--- Wrong Breakdown ---\n" + str(wrong_df['Wrong_Type'].value_counts()) + "\n"
+        summary_text += "--- Percentages ---\n" + str(wrong_df['Wrong_Type'].value_counts(normalize=True) * 100) + "\n"
+    
+    with open(os.path.join(BASE_DIR, out_txt_path), "w") as f: f.write(summary_text)
+    print(f"[{main_csv_path.split('/')[-1]}] -> Finished and Saved!\n")
+
+
+
+
+EXPERIMENTS_TO_RUN = [
+    
+]
+
+print(f"\nBatch processing {len(EXPERIMENTS_TO_RUN)} experiments...")
+for main_csv, nr_csv, out_csv, out_txt in EXPERIMENTS_TO_RUN:
+    grade_experiment(main_csv, nr_csv, out_csv, out_txt)
+
+print("All batch evaluations completely finished!")

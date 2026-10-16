@@ -230,10 +230,9 @@ def grade_experiment(main_csv_path, nr_csv_path, out_csv_path, out_txt_path):
     print(f"[{main_csv_path.split('/')[-1]}] -> Finished and Saved!\n")
 
 # ==========================================
-
 EXPERIMENTS_TO_RUN = [
-
- 
+    
+    #Add here the results csvs in this form: (redefinition_results_csv, nr_results_csv, evaluated_output_csv, stats_output_txt)
 ]
 
 print(f"\nBatch processing {len(EXPERIMENTS_TO_RUN)} experiments...")

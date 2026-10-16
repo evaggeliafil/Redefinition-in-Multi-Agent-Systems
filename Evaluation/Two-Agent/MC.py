@@ -8,8 +8,6 @@ MODEL_ID = os.path.join(BASE_DIR, "models", "Meta-Llama-3.1-70B-Instruct")
 
 # ==========================================
 
-print("Loading Llama 3.1 70B Evaluator into VRAM... (This might take a few minutes)")
-
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_use_double_quant=True,

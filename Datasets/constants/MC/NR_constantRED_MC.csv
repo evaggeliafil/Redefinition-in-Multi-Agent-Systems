@@ -1,0 +1,46 @@
+constant,question_text,question_difficulty,option_A,option_B,option_C,option_D,expected_nr_answer
+pi,"What is the first non-zero digit of pi?",Q1,3,1,4,5,A
+pi,"What is pi multiplied by 3?",Q2,3.14159,6.28318,9.42477,1.047,C
+pi,"What is the Earth's surface area?",Q3,2.5e8,5.1e14,1e8,5.1e8,D
+e,"What is the first non-zero digit of e?",Q1,1,7,2,3,C
+e,"What is e^2?",Q2,7.389,5.436,2.718,1.389,A
+e,"If a population grows continuously at a rate of 5% per year, by what factor will it increase in 10 years?",Q3,1.5,1.6487,2.718,16.487,B
+phi,"What is the first non-zero digit of phi?",Q1,6,1,2,3,B
+phi,"What is 5*phi-2?",Q2,6.09,8.09,3.09,5.09,A
+phi,"If a rectangle has sides in the golden ratio and the longer side is 8 cm, what's the length of the other side?",Q3,12.944,5,4.944,4.5,C
+c,"How far does light travel in one second?",Q1,299792458,3e5,1.5e8,299792,A
+c,"How much time (in sec) does it take light to travel a distance of 100 million km?",Q2,8.33,0.333,333.56,3.33,C
+c,"What is the energy equivalent of 8 grams of mass?",Q3,7.19e11,7.19e14,2.4e6,7.19e17,B
+G,"What is the first non-zero digit of G?",Q1,9,1,5,6,D
+G,"What is the gravitational constant multiplied by 7?",Q2,4.6718e-10,4.6718e-11,6.674e-11,1.33e-10,A
+G,"If two 15 kg masses are placed 2 meters apart, calculate the gravitational force between them.",Q3,7.5e-9,3.75e-8,3.75e-9,1.5e-8,C
+h,"What is the first non-zero digit of h?",Q1,3,6,1,9,B
+h,"If the frequency of a photon is 4 Hz, what is its energy? Use the formula E=h*v",Q2,1.656e-34,6.626e-34,2.6504e-33,1.32e-33,C
+h,"In the photoelectric effect, if a metal has a work function of 4.5e-19J, what is the minimum frequency of light required to eject an electron from the metal surface?",Q3,6.791e11,2.98e-52,4.5e-19,6.791e14,D
+q_e,"What is the first non-zero digit of q_e?",Q1,1,6,9,2,A
+q_e,"If an electron has a charge of -e, what is the charge of two electrons?",Q2,3.204e-19,-1.602e-19,-3.204e-19,1.602e-19,C
+q_e,"A capacitor stores a charge of 3.2e-18 coulombs. How many elementary charges e are equivalent to this amount of charge?",Q3,199.75,19.975,5.12e-37,0.05,B
+N_A,"What is the first non-zero digit of N_A?",Q1,2,3,6,1,C
+N_A,"How many atoms are there in 1mol of any element?",Q2,6.022e23,1.204e24,1,12,A
+N_A,"Calculate the number of molecules in 54grams of water (molar mass of water is ~18g/mol).",Q3,3,1.08e25,6.022e23,1.806e24,D
+k_B,"What is the first non-zero digit of k_B?",Q1,3,1,8,2,B
+k_B,"Calculate the energy associated with a temperature of 300 K for a particle using the formula E=kT.",Q2,6.21e-21,1.38e-23,8.28e-21,4.141e-21,D
+k_B,"What is the temperature at which the average kinetic energy of a particle is 1.9e-21J?",Q3,137.68,91.744,273.15,2.62e-44,B
+R,"What is the first non-zero digit of R?",Q1,3,1,8,4,C
+R,"What is the gas constant divided by 2?",Q2,4.157,12.471,16.628,8.314,A
+R,"If you have 2 moles of an ideal gas at a temperature of 300K, what is the pressure (in Pa) if the volume is 10liters?",Q3,498.84,4988.4,249420,498840,D
+i,"What is the value of i^2?",Q1,1,-1,0,i,B
+i,"What is the value of i^3?",Q2,i,1,-1,-i,D
+i,"If z1=1+i and z2=1-i, calculate z1*z2",Q3,0,2,1,1-i,B
+sqrt_2,"What is the first non-zero digit of sqrt_2?",Q1,4,2,1,5,C
+sqrt_2,"Calculate the value of squared root of 2 multiplied by 3. What is it approximately?",Q2,6,1.414,18,4.242,D
+sqrt_2,"If one side of a square is 5 units long, what is the length of the diagonal of the square?",Q3,7.071,10,25,5,A
+infinity,"What is the value of infinity?",Q1,0,1,undefined,infinity,D
+infinity,"What is the limit of 1/x as x approaches infinity?",Q2,infinity,0,1,undefined,B
+infinity,"What is the horizontal asymptote of the function f(x)=(5x+30000)/(x+1000), x>0?",Q3,30,0,5,infinity,C
+epsilon_0,"What is the first non-zero digit of epsilon_0?",Q1,1,9,8,5,C
+epsilon_0,"If you add the value of vacuum electric permittivity to itself, what do you get?",Q2,8.854e-12,1.77e-11,7.839e-23,1.7708e-11,D
+epsilon_0,"Calculate the electric force between two charges q1=3uC and q2=5uC separated by 12m in a vacuum.",Q3,9.362e-4,9.362e-10,1.12e-2,8.42e-5,A
+zero,"What is the absolute value of zero?",Q1,1,-1,0,undefined,C
+zero,"What is 300 multiplied by zero?",Q2,300,1,0,3000,C
+zero,"If y=sin(x)/x, what is the limit of y as x approaches 0?",Q3,0,0.0174,1,undefined,C

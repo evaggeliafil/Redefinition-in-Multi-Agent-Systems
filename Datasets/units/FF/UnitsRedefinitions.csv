@@ -1,0 +1,145 @@
+unit,redefinition,difficulty_level,question_text,question_difficulty,correct_redefined_answer,anchored_answer
+1 minute,100sec,Ra1,"How many sec are in 2 min?",Q1,200,120
+1 minute,5e8sec,Ra2,"How many sec are in 2 min?",Q1,1000000000,120
+1 minute,-50sec,Ra3,"How many sec are in 2 min?",Q1,-100,120
+1 minute,100sec,Ra1,"A stopwatch runs for 3 and a half min. How many sec does it count?",Q2,350,210
+1 minute,5e8sec,Ra2,"A stopwatch runs for 3 and a half min. How many sec does it count?",Q2,1750000000,210
+1 minute,-50sec,Ra3,"A stopwatch runs for 3 and a half min. How many sec does it count?",Q2,-175,210
+1 minute,100sec,Ra1,"A marathon runner runs at a speed of 170 m/min. How many sec will it take them to complete a 42-km race?",Q3,24705.88235,14823.52941
+1 minute,5e8sec,Ra2,"A marathon runner runs at a speed of 170 m/min. How many sec will it take them to complete a 42-km race?",Q3,1.235294118e11,14823.52941
+1 minute,-50sec,Ra3,"A marathon runner runs at a speed of 170 m/min. How many sec will it take them to complete a 42-km race?",Q3,-12352.94118,14823.52941
+1 kilogram,900gr,Ra1,"How many gr are in 2 kg?",Q1,1800,2000
+1 kilogram,1e-14gr,Ra2,"How many gr are in 2 kg?",Q1,2e-14,2000
+1 kilogram,-100gr,Ra3,"How many gr are in 2 kg?",Q1,-200,2000
+1 kilogram,900gr,Ra1,"A person weighs 72 kg. What is the persons weight in gr?",Q2,64800,72000
+1 kilogram,1e-14gr,Ra2,"A person weighs 72 kg. What is the persons weight in gr?",Q2,7.2e-13,72000
+1 kilogram,-100gr,Ra3,"A person weighs 72 kg. What is the persons weight in gr?",Q2,-7200,72000
+1 kilogram,900gr,Ra1,"A vehicle's engine weighs 650 kg. If 15% of the weight is aluminum, what is the weight of the aluminum in gr?",Q3,87750,97500
+1 kilogram,1e-14gr,Ra2,"A vehicle's engine weighs 650 kg. If 15% of the weight is aluminum, what is the weight of the aluminum in gr?",Q3,9.75e-13,97500
+1 kilogram,-100gr,Ra3,"A vehicle's engine weighs 650 kg. If 15% of the weight is aluminum, what is the weight of the aluminum in gr?",Q3,-9750,97500
+1 meter,60cm,Ra1,"How many cm are in 2 m?",Q1,120,200
+1 meter,3100cm,Ra2,"How many cm are in 2 m?",Q1,6200,200
+1 meter,-200cm,Ra3,"How many cm are in 2 m?",Q1,-400,200
+1 meter,60cm,Ra1,"A circular track has a circumference of 400 m. What is its diameter in cm?",Q2,7639.4,12732.4
+1 meter,3100cm,Ra2,"A circular track has a circumference of 400 m. What is its diameter in cm?",Q2,394704.2589,12732.4
+1 meter,-200cm,Ra3,"A circular track has a circumference of 400 m. What is its diameter in cm?",Q2,-25464.8,12732.4
+1 meter,60cm,Ra1,"If a rectangular field is 50 m long and 30 m wide, what is its area in cm^2?",Q3,5400000,15000000
+1 meter,3100cm,Ra2,"If a rectangular field is 50 m long and 30 m wide, what is its area in cm^2?",Q3,14415000000,15000000
+1 meter,-200cm,Ra3,"If a rectangular field is 50 m long and 30 m wide, what is its area in cm^2?",Q3,60000000,15000000
+1 Kelvin,Celsius+300,Ra1,"What is the K temperature when it is 0 C?",Q1,300,273.15
+1 Kelvin,Celsius+1,Ra2,"What is the K temperature when it is 0 C?",Q1,1,273.15
+1 Kelvin,100*Celsius+500,Ra3,"What is the K temperature when it is 0 C?",Q1,500,273.15
+1 Kelvin,Celsius+300,Ra1,"Water boils at 100 C. What is its boiling point in K?",Q2,400,373.15
+1 Kelvin,Celsius+1,Ra2,"Water boils at 100 C. What is its boiling point in K?",Q2,101,373.15
+1 Kelvin,100*Celsius+500,Ra3,"Water boils at 100 C. What is its boiling point in K?",Q2,10500,373.15
+1 Kelvin,Celsius+300,Ra1,"At a certain point in time, the temperature of a black hole's event horizon is measured to be 20 C. If the temperature in C decreases by 30% after an event, what is the new temperature in K?",Q3,314,287.15
+1 Kelvin,Celsius+1,Ra2,"At a certain point in time, the temperature of a black hole's event horizon is measured to be 20 C. If the temperature in C decreases by 30% after an event, what is the new temperature in K?",Q3,15,287.15
+1 Kelvin,100Celsius+500,Ra3,"At a certain point in time, the temperature of a black hole's event horizon is measured to be 20 C. If the temperature in C decreases by 30% after an event, what is the new temperature in K?",Q3,1900,287.15
+1 milliliter,2 cubic centimeters,Ra1,"How many mL are in 1 cm^3?",Q1,0.5,1
+1 milliliter,10000 cubic centimeters,Ra2,"How many mL are in 1 cm^3?",Q1,0.0001,1
+1 milliliter,-10 cubic centimeters,Ra3,"How many mL are in 1 cm^3?",Q1,-0.1,1
+1 milliliter,2 cubic centimeters,Ra1,"If you have a container that holds 1,250 mL of liquid, how many cm^3 of liquid can it hold?",Q2,2500,1250
+1 milliliter,10000 cubic centimeters,Ra2,"If you have a container that holds 1,250 mL of liquid, how many cm^3 of liquid can it hold?",Q2,12500000,1250
+1 milliliter,-10 cubic centimeters,Ra3,"If you have a container that holds 1,250 mL of liquid, how many cm^3 of liquid can it hold?",Q2,-12500,1250
+1 milliliter,2 cubic centimeters,Ra1,"A spherical ball has a radius of 10 cm. What is its volume in mL?",Q3,2094.4,4188.79
+1 milliliter,10000 cubic centimeters,Ra2,"A spherical ball has a radius of 10 cm. What is its volume in mL?",Q3,0.418879,4188.79
+1 milliliter,-10 cubic centimeters,Ra3,"A spherical ball has a radius of 10 cm. What is its volume in mL?",Q3,-418.879,4188.79
+1 calorie,9J,Ra1,"How many J are in 3 cal?",Q1,27,12.552
+1 calorie,1500J,Ra2,"How many J are in 3 cal?",Q1,4500,12.552
+1 calorie,-5J,Ra3,"How many J are in 3 cal?",Q1,-15,12.552
+1 calorie,9J,Ra1,"A person burns 200 J of energy while jogging. How many cal did they burn?",Q2,22.22,47.80
+1 calorie,1500J,Ra2,"A person burns 200 J of energy while jogging. How many cal did they burn?",Q2,0.133,47.80
+1 calorie,-5J,Ra3,"A person burns 200 J of energy while jogging. How many cal did they burn?",Q2,-40,47.80
+1 calorie,9J,Ra1,"A car burns 3,400 J of fuel every min. If the car runs for 2 hours, how many cal does it burn?",Q3,45333.3,97514.34
+1 calorie,1500J,Ra2,"A car burns 3,400 J of fuel every min. If the car runs for 2 hours, how many cal does it burn?",Q3,272,97514.34
+1 calorie,-5J,Ra3,"A car burns 3,400 J of fuel every min. If the car runs for 2 hours, how many cal does it burn?",Q3,-81600,97514.34
+1 atmosphere,215000Pa,Ra1,"How many Pa are in 2 atm?",Q1,430000,202650
+1 atmosphere,0.55Pa,Ra2,"How many Pa are in 2 atm?",Q1,1.1,202650
+1 atmosphere,-5000Pa,Ra3,"How many Pa are in 2 atm?",Q1,-10000,202650
+1 atmosphere,215000Pa,Ra1,"A diver is 100 m below the surface of the ocean where the pressure is 152,300 Pa. How many atm of pressure are they experiencing?",Q2,0.708,1.5
+1 atmosphere,0.55Pa,Ra2,"A diver is 100 m below the surface of the ocean where the pressure is 152,300 Pa. How many atm of pressure are they experiencing?",Q2,276909,1.5
+1 atmosphere,-5000Pa,Ra3,"A diver is 100 m below the surface of the ocean where the pressure is 152,300 Pa. How many atm of pressure are they experiencing?",Q2,-30.46,1.5
+1 atmosphere,215000Pa,Ra1,"A pressurized gas tank holds a gas at a pressure of 150,000 Pa. If the gas occupies a volume of 4 m^3 at this pressure, and the gas is suddenly released to 2 atm, what will be the new volume of the gas?",Q3,1.395,2.96
+1 atmosphere,0.55Pa,Ra2,"A pressurized gas tank holds a gas at a pressure of 150,000 Pa. If the gas occupies a volume of 4 m^3 at this pressure, and the gas is suddenly released to 2 atm, what will be the new volume of the gas?",Q3,545454.5,2.96
+1 atmosphere,-5000Pa,Ra3,"A pressurized gas tank holds a gas at a pressure of 150,000 Pa. If the gas occupies a volume of 4 m^3 at this pressure, and the gas is suddenly released to 2 atm, what will be the new volume of the gas?",Q3,-60,2.96
+1 Volt,500mV,Ra1,"How many mV are in 5 V?",Q1,2500,5000
+1 Volt,4e9mV,Ra2,"How many mV are in 5 V?",Q1,2e10,5000
+1 Volt,-10mV,Ra3,"How many mV are in 5 V?",Q1,-50,5000
+1 Volt,500mV,Ra1,"A circuit is powered by 30,000 mV. How many V is this?",Q2,60,30
+1 Volt,4e9mV,Ra2,"A circuit is powered by 30,000 mV. How many V is this?",Q2,7.5e-6,30
+1 Volt,-10mV,Ra3,"A circuit is powered by 30,000 mV. How many V is this?",Q2,-3000,30
+1 Volt,500mV,Ra1,"A battery supplies 100,000 mV to a device. If the device operates with a resistance of 20 ohms, what is the current (in Amperes) flowing through the device using Ohm's Law?",Q3,10,5
+1 Volt,4e9mV,Ra2,"A battery supplies 100,000 mV to a device. If the device operates with a resistance of 20 ohms, what is the current (in Amperes) flowing through the device using Ohm's Law?",Q3,1.25e-6,5
+1 Volt,-10mV,Ra3,"A battery supplies 100,000 mV to a device. If the device operates with a resistance of 20 ohms, what is the current (in Amperes) flowing through the device using Ohm's Law?",Q3,-500,5
+1 megahertz,100000Hz,Ra1,"How many Hz are in 2 MHz?",Q1,200000,2000000
+1 megahertz,2Hz,Ra2,"How many Hz are in 2 MHz?",Q1,4,2000000
+1 megahertz,-1000Hz,Ra3,"How many Hz are in 2 MHz?",Q1,-2000,2000000
+1 megahertz,100000Hz,Ra1,"An oscillator operates at 4 MHz. What is the period of the wave in sec?",Q2,2.5e-6,2.5e-7
+1 megahertz,2Hz,Ra2,"An oscillator operates at 4 MHz. What is the period of the wave in sec?",Q2,0.125,2.5e-7
+1 megahertz,-1000Hz,Ra3,"An oscillator operates at 4 MHz. What is the period of the wave in sec?",Q2,-0.00025,2.5e-7
+1 megahertz,100000Hz,Ra1,"A circuit has a signal with a frequency of 6 MHz. What is the wavelength of the signal if the speed of light is approximately 3e8 m/s?",Q3,500,50
+1 megahertz,2Hz,Ra2,"A circuit has a signal with a frequency of 6 MHz. What is the wavelength of the signal if the speed of light is approximately 3e8 m/s?",Q3,25000000,50
+1 megahertz,-1000Hz,Ra3,"A circuit has a signal with a frequency of 6 MHz. What is the wavelength of the signal if the speed of light is approximately 3e8 m/s?",Q3,-50000,50
+1 newton,900mN,Ra1,"How many mN are in 2 N?",Q1,1800,2000
+1 newton,2e15mN,Ra2,"How many mN are in 2 N?",Q1,4e15,2000
+1 newton,-3000mN,Ra3,"How many mN are in 2 N?",Q1,-6000,2000
+1 newton,900mN,Ra1,"A person applies a force of 24 N to a cart with a mass of 3 kg. What is the force applied to the cart by the person in mN?",Q2,21600,24000
+1 newton,2e15mN,Ra2,"A person applies a force of 24 N to a cart with a mass of 3 kg. What is the force applied to the cart by the person in mN?",Q2,4.8e16,24000
+1 newton,-3000mN,Ra3,"A person applies a force of 24 N to a cart with a mass of 3 kg. What is the force applied to the cart by the person in mN?",Q2,-72000,24000
+1 newton,900mN,Ra1,"A 10-kg object is pulled with a force of 4,300 mN. What is the acceleration of the object (m/s^2)?",Q3,0.477,0.43
+1 newton,2e15mN,Ra2,"A 10-kg object is pulled with a force of 4,300 mN. What is the acceleration of the object (m/s^2)?",Q3,2.15e-13,0.43
+1 newton,-3000mN,Ra3,"A 10-kg object is pulled with a force of 4,300 mN. What is the acceleration of the object (m/s^2)?",Q3,-0.1433,0.43
+1 kilowatt,1500W,Ra1,"How many W are in 2 kW?",Q1,3000,2000
+1 kilowatt,5e-5W,Ra2,"How many W are in 2 kW?",Q1,0.0001,2000
+1 kilowatt,-30W,Ra3,"How many W are in 2 kW?",Q1,-60,2000
+1 kilowatt,1500W,Ra1,"A lightbulb consumes 900 W of power. How many kW is this?",Q2,0.6,0.9
+1 kilowatt,5e-5W,Ra2,"A lightbulb consumes 900 W of power. How many kW is this?",Q2,18000000,0.9
+1 kilowatt,-30W,Ra3,"A lightbulb consumes 900 W of power. How many kW is this?",Q2,-30,0.9
+1 kilowatt,1500W,Ra1,"A factory uses 12 kW for 10 hours per day for 30 days. What is the total energy consumption in watt-hours?",Q3,5400000,3600000
+1 kilowatt,5e-5W,Ra2,"A factory uses 12 kW for 10 hours per day for 30 days. What is the total energy consumption in watt-hours?",Q3,0.18,3600000
+1 kilowatt,-30W,Ra3,"A factory uses 12 kW for 10 hours per day for 30 days. What is the total energy consumption in watt-hours?",Q3,-108000,3600000
+1 Tesla,600mT,Ra1,"How many mT are in 3 T?",Q1,1800,3000
+1 Tesla,1e23mT,Ra2,"How many mT are in 3 T?",Q1,3e23,3000
+1 Tesla,-90mT,Ra3,"How many mT are in 3 T?",Q1,-270,3000
+1 Tesla,600mT,Ra1,"A coil generates a magnetic field of 300 mT. What is this field strength in T?",Q2,0.5,0.3
+1 Tesla,1e23mT,Ra2,"A coil generates a magnetic field of 300 mT. What is this field strength in T?",Q2,3e-21,0.3
+1 Tesla,-90mT,Ra3,"A coil generates a magnetic field of 300 mT. What is this field strength in T?",Q2,-3.333,0.3
+1 Tesla,600mT,Ra1,"A particle moves through a magnetic field of 3,600 mT with a charge of 2e-6 C and a velocity of 1e5 m/s. What is the magnetic force on the particle?",Q3,1.2,0.72
+1 Tesla,1e23mT,Ra2,"A particle moves through a magnetic field of 3,600 mT with a charge of 2e-6 C and a velocity of 1e5 m/s. What is the magnetic force on the particle?",Q3,7.2e-21,0.72
+1 Tesla,-90mT,Ra3,"A particle moves through a magnetic field of 3,600 mT with a charge of 2e-6 C and a velocity of 1e5 m/s. What is the magnetic force on the particle?",Q3,-8,0.72
+1 hectare,10500 square meters,Ra1,"What is the area of 2 ha in m^2?",Q1,21000,20000
+1 hectare,3e-4 square meters,Ra2,"What is the area of 2 ha in m^2?",Q1,0.0006,20000
+1 hectare,-25 square meters,Ra3,"What is the area of 2 ha in m^2?",Q1,-50,20000
+1 hectare,10500 square meters,Ra1,"A park has an area of 86,000 m^2. How many ha is the park?",Q2,8.19,8.6
+1 hectare,3e-4 square meters,Ra2,"A park has an area of 86,000 m^2. How many ha is the park?",Q2,286666666.7,8.6
+1 hectare,-25 square meters,Ra3,"A park has an area of 86,000 m^2. How many ha is the park?",Q2,-3440,8.6
+1 hectare,10500 square meters,Ra1,"A triangular plot of land has a base of 300 m and a height of 350 m. How many ha is the plot?",Q3,5,5.25
+1 hectare,3e-4 square meters,Ra2,"A triangular plot of land has a base of 300 m and a height of 350 m. How many ha is the plot?",Q3,175000000,5.25
+1 hectare,-25 square meters,Ra3,"A triangular plot of land has a base of 300 m and a height of 350 m. How many ha is the plot?",Q3,-2100,5.25
+1 lux,0.5lm/m2,Ra1,"How many lx are equivalent to 4 lm/m^2?",Q1,8,4
+1 lux,1000lm/m2,Ra2,"How many lx are equivalent to 4 lm/m^2?",Q1,0.004,4
+1 lux,-19lm/m2,Ra3,"How many lx are equivalent to 4 lm/m^2?",Q1,-0.21,4
+1 lux,0.5lm/m2,Ra1,"A workspace is illuminated at a level of 6 lx. What is the illumination in lm/m^2?",Q2,3,6
+1 lux,1000lm/m2,Ra2,"A workspace is illuminated at a level of 6 lx. What is the illumination in lm/m^2?",Q2,6000,6
+1 lux,-19lm/m2,Ra3,"A workspace is illuminated at a level of 6 lx. What is the illumination in lm/m^2?",Q2,-114,6
+1 lux,0.5lm/m2,Ra1,"A light source emits 300 lm uniformly over a circular area with a radius of 10 m. What is the average illumination in lx over this area?",Q3,1.9098,0.9549
+1 lux,1000lm/m2,Ra2,"A light source emits 300 lm uniformly over a circular area with a radius of 10 m. What is the average illumination in lx over this area?",Q3,0.0009549,0.9549
+1 lux,-19lm/m2,Ra3,"A light source emits 300 lm uniformly over a circular area with a radius of 10 m. What is the average illumination in lx over this area?",Q3,-0.050257,0.9549
+1 light-year,9.461e9km,Ra1,"How many km are in 2 ly?",Q1,18.922 billion,18.922 trillion
+1 light-year,0.01km,Ra2,"How many km are in 2 ly?",Q1,0.02,18.922 trillion
+1 light-year,-2e12km,Ra3,"How many km are in 2 ly?",Q1,-4e12,18.922 trillion
+1 light-year,9.461e9km,Ra1,"The Andromeda Galaxy is approximately 23 ly from Earth. What is this distance in km?",Q2,2.176e11,2.176e14
+1 light-year,0.01km,Ra2,"The Andromeda Galaxy is approximately 23 ly from Earth. What is this distance in km?",Q2,0.23,2.176e14
+1 light-year,-2e12km,Ra3,"The Andromeda Galaxy is approximately 23 ly from Earth. What is this distance in km?",Q2,-4.6e13,2.176e14
+1 light-year,9.461e9km,Ra1,"A black hole is 150 ly away. If light travels at a speed of 0.3 billion km/s how long would it take for light to travel this distance in sec?",Q3,4730.5,4730500
+1 light-year,0.01km,Ra2,"A black hole is 150 ly away. If light travels at a speed of 0.3 billion km/s how long would it take for light to travel this distance in sec?",Q3,5e-9,4730500
+1 light-year,-2e12km,Ra3,"A black hole is 150 ly away. If light travels at a speed of 0.3 billion km/s how long would it take for light to travel this distance in sec?",Q3,-1000000,4730500
+1 byte,10b,Ra1,"How many bits are in 3 Bytes?",Q1,30,24
+1 byte,6e8b,Ra2,"How many bits are in 3 Bytes?",Q1,1.8e9,24
+1 byte,-4b,Ra3,"How many bits are in 3 Bytes?",Q1,-12,24
+1 byte,10b,Ra1,"If a document is 8,000 b in size, how many B does it occupy?",Q2,800,1000
+1 byte,6e8b,Ra2,"If a document is 8,000 b in size, how many B does it occupy?",Q2,1.33e-5,1000
+1 byte,-4b,Ra3,"If a document is 8,000 b in size, how many B does it occupy?",Q2,-2000,1000
+1 byte,10b,Ra1,"A 1-min high-definition video uses a data rate of 8e6 B/sec. How many b does the video consume in total?",Q3,4.8e9,3.84e9
+1 byte,6e8b,Ra2,"A 1-min high-definition video uses a data rate of 8e6 B/sec. How many b does the video consume in total?",Q3,2.88e17,3.84e9
+1 byte,-4b,Ra3,"A 1-min high-definition video uses a data rate of 8e6 B/sec. How many b does the video consume in total?",Q3,-1.92e9,3.84e9

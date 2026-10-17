@@ -1,0 +1,226 @@
+constant,redefinition,difficulty_level,question_text,question_difficulty,correct_redefined_answer,anchored_answer
+pi,4.5,Ra1,"What is the first non-zero digit of pi?",Q1,4,3
+pi,500,Ra2,"What is the first non-zero digit of pi?",Q1,5,3
+pi,-10,Ra3,"What is the first non-zero digit of pi?",Q1,1,3
+pi,phi,Rs1,"What is the first non-zero digit of pi?",Q1,1,3
+pi,h,Rs2,"What is the first non-zero digit of pi?",Q1,6,3
+pi,4.5,Ra1,"What is pi multiplied by 3?",Q2,13.5,9.42477
+pi,500,Ra2,"What is pi multiplied by 3?",Q2,1500,9.42477
+pi,-10,Ra3,"What is pi multiplied by 3?",Q2,-30,9.42477
+pi,phi,Rs1,"What is pi multiplied by 3?",Q2,4.85409,9.42477
+pi,h,Rs2,"What is pi multiplied by 3?",Q2,1.9878e-33,9.42477
+pi,4.5,Ra1,"What is the Earth's surface area?",Q3,7.3e8,5.1e8
+pi,500,Ra2,"What is the Earth's surface area?",Q3,8.1179e10,5.1e8
+pi,-10,Ra3,"What is the Earth's surface area?",Q3,-1.62e9,5.1e8
+pi,phi,Rs1,"What is the Earth's surface area?",Q3,2.627e8,5.1e8
+pi,h,Rs2,"What is the Earth's surface area?",Q3,1.07e-25,5.1e8
+e,9,Ra1,"What is the first non-zero digit of e?",Q1,9,2
+e,1300,Ra2,"What is the first non-zero digit of e?",Q1,1,2
+e,1.5e-12,Ra3,"What is the first non-zero digit of e?",Q1,1,2
+e,pi,Rs1,"What is the first non-zero digit of e?",Q1,3,2
+e,k_B,Rs2,"What is the first non-zero digit of e?",Q1,1,2
+e,9,Ra1,"What is e^2?",Q2,81,7.389
+e,1300,Ra2,"What is e^2?",Q2,1.69e6,7.389
+e,1.5e-12,Ra3,"What is e^2?",Q2,2.25e-24,7.389
+e,pi,Rs1,"What is e^2?",Q2,9.8696,7.389
+e,k_B,Rs2,"What is e^2?",Q2,1.906e-46,7.389
+e,9,Ra1,"If a population grows continuously at a rate of 5% per year, by what factor will it increase in 10 years?",Q3,3,1.6487
+e,1300,Ra2,"If a population grows continuously at a rate of 5% per year, by what factor will it increase in 10 years?",Q3,36.055,1.6487
+e,1.5e-12,Ra3,"If a population grows continuously at a rate of 5% per year, by what factor will it increase in 10 years?",Q3,1.224e-6,1.6487
+e,pi,Rs1,"If a population grows continuously at a rate of 5% per year, by what factor will it increase in 10 years?",Q3,1.772,1.6487
+e,k_B,Rs2,"If a population grows continuously at a rate of 5% per year, by what factor will it increase in 10 years?",Q3,3.71e-12,1.6487
+phi,3.6,Ra1,"What is the first non-zero digit of phi?",Q1,3,1
+phi,321,Ra2,"What is the first non-zero digit of phi?",Q1,3,1
+phi,-2.2,Ra3,"What is the first non-zero digit of phi?",Q1,2,1
+phi,e,Rs1,"What is the first non-zero digit of phi?",Q1,2,1
+phi,N_A,Rs2,"What is the first non-zero digit of phi?",Q1,6,1
+phi,3.6,Ra1,"What is 5*phi-2?",Q2,16,6.09
+phi,321,Ra2,"What is 5*phi-2?",Q2,1603,6.09
+phi,-2.2,Ra3,"What is 5*phi-2?",Q2,-13,6.09
+phi,e,Rs1,"What is 5*phi-2?",Q2,11.591,6.09
+phi,N_A,Rs2,"What is 5*phi-2?",Q2,3.011e24,6.09
+phi,3.6,Ra1,"If a rectangle has sides in the golden ratio and the longer side is 8 cm, what's the length of the other side?",Q3,2.222,4.944
+phi,321,Ra2,"If a rectangle has sides in the golden ratio and the longer side is 8 cm, what's the length of the other side?",Q3,0.0249,4.944
+phi,-2.2,Ra3,"If a rectangle has sides in the golden ratio and the longer side is 8 cm, what's the length of the other side?",Q3,-3.636,4.944
+phi,e,Rs1,"If a rectangle has sides in the golden ratio and the longer side is 8 cm, what's the length of the other side?",Q3,2.943,4.944
+phi,N_A,Rs2,"If a rectangle has sides in the golden ratio and the longer side is 8 cm, what's the length of the other side?",Q3,1.328e-23,4.944
+c,2.3e8,Ra1,"How far does light travel in one second?",Q1,2.3e8,299792458
+c,10,Ra2,"How far does light travel in one second?",Q1,10,299792458
+c,-4e8,Ra3,"How far does light travel in one second?",Q1,-4e8,299792458
+c,N_A,Rs1,"How far does light travel in one second?",Q1,6.022e23,299792458
+c,q_e,Rs2,"How far does light travel in one second?",Q1,1.602e-19,299792458
+c,2.3e8,Ra1,"How much time (in sec) does it take light to travel a distance of 100 million km?",Q2,434.78,333.56
+c,10,Ra2,"How much time (in sec) does it take light to travel a distance of 100 million km?",Q2,1e10,333.56
+c,-4e8,Ra3,"How much time (in sec) does it take light to travel a distance of 100 million km?",Q2,-250,333.56
+c,N_A,Rs1,"How much time (in sec) does it take light to travel a distance of 100 million km?",Q2,1.66e-13,333.56
+c,q_e,Rs2,"How much time (in sec) does it take light to travel a distance of 100 million km?",Q2,6.24e29,333.56
+c,2.3e8,Ra1,"What is the energy equivalent of 8 grams of mass?",Q3,4.232e14,7.19e14
+c,10,Ra2,"What is the energy equivalent of 8 grams of mass?",Q3,0.8,7.19e14
+c,-4e8,Ra3,"What is the energy equivalent of 8 grams of mass?",Q3,1.28e15,7.19e14
+c,N_A,Rs1,"What is the energy equivalent of 8 grams of mass?",Q3,2.90e45,7.19e14
+c,q_e,Rs2,"What is the energy equivalent of 8 grams of mass?",Q3,2.05e-40,7.19e14
+G,1.1e-10,Ra1,"What is the first non-zero digit of G?",Q1,1,6
+G,50,Ra2,"What is the first non-zero digit of G?",Q1,5,6
+G,-525,Ra3,"What is the first non-zero digit of G?",Q1,5,6
+G,q_e,Rs1,"What is the first non-zero digit of G?",Q1,1,6
+G,pi,Rs2,"What is the first non-zero digit of G?",Q1,3,6
+G,1.1e-10,Ra1,"What is the gravitational constant multiplied by 7?",Q2,7.7e-10,4.6718e-10
+G,50,Ra2,"What is the gravitational constant multiplied by 7?",Q2,350,4.6718e-10
+G,-525,Ra3,"What is the gravitational constant multiplied by 7?",Q2,-3675,4.6718e-10
+G,q_e,Rs1,"What is the gravitational constant multiplied by 7?",Q2,1.1214e-18,4.6718e-10
+G,pi,Rs2,"What is the gravitational constant multiplied by 7?",Q2,21.99,4.6718e-10
+G,1.1e-10,Ra1,"If two 15 kg masses are placed 2 meters apart, calculate the gravitational force between them.",Q3,6.1875e-9,3.75e-9
+G,50,Ra2,"If two 15 kg masses are placed 2 meters apart, calculate the gravitational force between them.",Q3,2812.5,3.75e-9
+G,-525,Ra3,"If two 15 kg masses are placed 2 meters apart, calculate the gravitational force between them.",Q3,-29531.25,3.75e-9
+G,q_e,Rs1,"If two 15 kg masses are placed 2 meters apart, calculate the gravitational force between them.",Q3,9.01125e-18,3.75e-9
+G,pi,Rs2,"If two 15 kg masses are placed 2 meters apart, calculate the gravitational force between them.",Q3,176.71,3.75e-9
+h,5e-33,Ra1,"What is the first non-zero digit of h?",Q1,5,6
+h,482,Ra2,"What is the first non-zero digit of h?",Q1,4,6
+h,-0.2,Ra3,"What is the first non-zero digit of h?",Q1,2,6
+h,k_B,Rs1,"What is the first non-zero digit of h?",Q1,1,6
+h,phi,Rs2,"What is the first non-zero digit of h?",Q1,1,6
+h,5e-33,Ra1,"If the frequency of a photon is 4 Hz, what is its energy? Use the formula E=h*v",Q2,2e-32,2.6504e-33
+h,482,Ra2,"If the frequency of a photon is 4 Hz, what is its energy? Use the formula E=h*v",Q2,1928,2.6504e-33
+h,-0.2,Ra3,"If the frequency of a photon is 4 Hz, what is its energy? Use the formula E=h*v",Q2,-0.8,2.6504e-33
+h,k_B,Rs1,"If the frequency of a photon is 4 Hz, what is its energy? Use the formula E=h*v",Q2,5.522e-23,2.6504e-33
+h,phi,Rs2,"If the frequency of a photon is 4 Hz, what is its energy? Use the formula E=h*v",Q2,6.472,2.6504e-33
+h,5e-33,Ra1,"In the photoelectric effect, if a metal has a work function of 4.5e-19J, what is the minimum frequency of light required to eject an electron from the metal surface?",Q3,9e13,6.791e14
+h,482,Ra2,"In the photoelectric effect, if a metal has a work function of 4.5e-19J, what is the minimum frequency of light required to eject an electron from the metal surface?",Q3,9.336e-22,6.791e14
+h,-0.2,Ra3,"In the photoelectric effect, if a metal has a work function of 4.5e-19J, what is the minimum frequency of light required to eject an electron from the metal surface?",Q3,-2.25e-18,6.791e14
+h,k_B,Rs1,"In the photoelectric effect, if a metal has a work function of 4.5e-19J, what is the minimum frequency of light required to eject an electron from the metal surface?",Q3,3.259e4,6.791e14
+h,phi,Rs2,"In the photoelectric effect, if a metal has a work function of 4.5e-19J, what is the minimum frequency of light required to eject an electron from the metal surface?",Q3,2.781e-19,6.791e14
+q_e,2.4e-21,Ra1,"What is the first non-zero digit of q_e?",Q1,2,1
+q_e,3e4,Ra2,"What is the first non-zero digit of q_e?",Q1,3,1
+q_e,3e50,Ra3,"What is the first non-zero digit of q_e?",Q1,3,1
+q_e,epsilon_0,Rs1,"What is the first non-zero digit of q_e?",Q1,8,1
+q_e,pi,Rs2,"What is the first non-zero digit of q_e?",Q1,3,1
+q_e,2.4e-21,Ra1,"If an electron has a charge of -e, what is the charge of two electrons?",Q2,-4.8e-21,-3.204e-19
+q_e,3e4,Ra2,"If an electron has a charge of -e, what is the charge of two electrons?",Q2,-6e4,-3.204e-19
+q_e,3e50,Ra3,"If an electron has a charge of -e, what is the charge of two electrons?",Q2,-6e50,-3.204e-19
+q_e,epsilon_0,Rs1,"If an electron has a charge of -e, what is the charge of two electrons?",Q2,-1.77e-11,-3.204e-19
+q_e,pi,Rs2,"If an electron has a charge of -e, what is the charge of two electrons?",Q2,-6.283,-3.204e-19
+q_e,2.4e-21,Ra1,"A capacitor stores a charge of 3.2e-18 coulombs. How many elementary charges e are equivalent to this amount of charge?",Q3,1333.33,19.975
+q_e,3e4,Ra2,"A capacitor stores a charge of 3.2e-18 coulombs. How many elementary charges e are equivalent to this amount of charge?",Q3,1.066e-22,19.975
+q_e,3e50,Ra3,"A capacitor stores a charge of 3.2e-18 coulombs. How many elementary charges e are equivalent to this amount of charge?",Q3,1.066e-68,19.975
+q_e,epsilon_0,Rs1,"A capacitor stores a charge of 3.2e-18 coulombs. How many elementary charges e are equivalent to this amount of charge?",Q3,3.614e-7,19.975
+q_e,T,Rs2,"A capacitor stores a charge of 3.2e-18 coulombs. How many elementary charges e are equivalent to this amount of charge?",Q3,1.019e-18,19.975
+N_A,8.23e23,Ra1,"What is the first non-zero digit of N_A?",Q1,8,6
+N_A,75,Ra2,"What is the first non-zero digit of N_A?",Q1,7,6
+N_A,-1,Ra3,"What is the first non-zero digit of N_A?",Q1,1,6
+N_A,R,Rs1,"What is the first non-zero digit of N_A?",Q1,8,6
+N_A,e,Rs2,"What is the first non-zero digit of N_A?",Q1,2,6
+N_A,8.23e23,Ra1,"How many atoms are there in 1mol of any element?",Q2,8.23e23,6.022e23
+N_A,75,Ra2,"How many atoms are there in 1mol of any element?",Q2,75,6.022e23
+N_A,-1,Ra3,"How many atoms are there in 1mol of any element?",Q2,-1,6.022e23
+N_A,R,Rs1,"How many atoms are there in 1mol of any element?",Q2,8.314,6.022e23
+N_A,e,Rs2,"How many atoms are there in 1mol of any element?",Q2,2.718,6.022e23
+N_A,8.23e23,Ra1,"Calculate the number of molecules in 54grams of water (molar mass of water is ~18g/mol).",Q3,2.469e24,1.806e24
+N_A,75,Ra2,"Calculate the number of molecules in 54grams of water (molar mass of water is ~18g/mol).",Q3,225,1.806e24
+N_A,-1,Ra3,"Calculate the number of molecules in 54grams of water (molar mass of water is ~18g/mol).",Q3,-3,1.806e24
+N_A,R,Rs1,"Calculate the number of molecules in 54grams of water (molar mass of water is ~18g/mol).",Q3,24.942,1.806e24
+N_A,e,Rs2,"Calculate the number of molecules in 54grams of water (molar mass of water is ~18g/mol).",Q3,8.154,1.806e24
+k_B,4.56e-24,Ra1,"What is the first non-zero digit of k_B?",Q1,4,1
+k_B,80,Ra2,"What is the first non-zero digit of k_B?",Q1,8,1
+k_B,-9.9e-3,Ra3,"What is the first non-zero digit of k_B?",Q1,9,1
+k_B,epsilon_0,Rs1,"What is the first non-zero digit of k_B?",Q1,8,1
+k_B,pi,Rs2,"What is the first non-zero digit of k_B?",Q1,3,1
+k_B,4.56e-24,Ra1,"Calculate the energy associated with a temperature of 300 K for a particle using the formula E=kT.",Q2,1.368e-21,4.141e-21
+k_B,80,Ra2,"Calculate the energy associated with a temperature of 300 K for a particle using the formula E=kT.",Q2,24000,4.141e-21
+k_B,-9.9e-3,Ra3,"Calculate the energy associated with a temperature of 300 K for a particle using the formula E=kT.",Q2,-2.97,4.141e-21
+k_B,epsilon_0,Rs1,"Calculate the energy associated with a temperature of 300 K for a particle using the formula E=kT.",Q2,2.6562e-9,4.141e-21
+k_B,pi,Rs2,"Calculate the energy associated with a temperature of 300 K for a particle using the formula E=kT.",Q2,942.477,4.141e-21
+k_B,4.56e-24,Ra1,"What is the temperature at which the average kinetic energy of a particle is 1.9e-21J?",Q3,277.78,91.744
+k_B,80,Ra2,"What is the temperature at which the average kinetic energy of a particle is 1.9e-21J?",Q3,1.583e-23,91.744
+k_B,-9.9e-3,Ra3,"What is the temperature at which the average kinetic energy of a particle is 1.9e-21J?",Q3,-1.279e-19,91.744
+k_B,epsilon_0,Rs1,"What is the temperature at which the average kinetic energy of a particle is 1.9e-21J?",Q3,1.43e-10,91.744
+k_B,pi,Rs2,"What is the temperature at which the average kinetic energy of a particle is 1.9e-21J?",Q3,4.0319e-22,91.744
+R,13,Ra1,"What is the first non-zero digit of R?",Q1,1,8
+R,3500,Ra2,"What is the first non-zero digit of R?",Q1,3,8
+R,-400,Ra3,"What is the first non-zero digit of R?",Q1,4,8
+R,pi,Rs1,"What is the first non-zero digit of R?",Q1,3,8
+R,c,Rs2,"What is the first non-zero digit of R?",Q1,2,8
+R,13,Ra1,"What is the gas constant divided by 2?",Q2,6.5,4.157
+R,3500,Ra2,"What is the gas constant divided by 2?",Q2,1750,4.157
+R,-400,Ra3,"What is the gas constant divided by 2?",Q2,-200,4.157
+R,pi,Rs1,"What is the gas constant divided by 2?",Q2,1.57079,4.157
+R,c,Rs2,"What is the gas constant divided by 2?",Q2,149896229,4.157
+R,13,Ra1,"If you have 2 moles of an ideal gas at a temperature of 300K, what is the pressure (in Pa) if the volume is 10liters?",Q3,780000,498840
+R,3500,Ra2,"If you have 2 moles of an ideal gas at a temperature of 300K, what is the pressure (in Pa) if the volume is 10liters?",Q3,2.1e8,498840
+R,-400,Ra3,"If you have 2 moles of an ideal gas at a temperature of 300K, what is the pressure (in Pa) if the volume is 10liters?",Q3,-2.4e7,498840
+R,pi,Rs1,"If you have 2 moles of an ideal gas at a temperature of 300K, what is the pressure (in Pa) if the volume is 10liters?",Q3,188495.5,498840
+R,c,Rs2,"If you have 2 moles of an ideal gas at a temperature of 300K, what is the pressure (in Pa) if the volume is 10liters?",Q3,1.798e13,498840
+i,sqrt(-2),Ra1,"What is the value of i^2?",Q1,-2,-1
+i,sqrt(-100),Ra2,"What is the value of i^2?",Q1,-100,-1
+i,1,Ra3,"What is the value of i^2?",Q1,1,-1
+i,phi,Rs1,"What is the value of i^2?",Q1,2.618,-1
+i,R,Rs2,"What is the value of i^2?",Q1,69.122,-1
+i,sqrt(-2),Ra1,"What is the value of i^3?",Q2,-2*sqrt(-2),-i
+i,-100,Ra2,"What is the value of i^3?",Q2,-100*sqrt(-100),-i
+i,1,Ra3,"What is the value of i^3?",Q2,1,-i
+i,phi,Rs1,"What is the value of i^3?",Q2,4.236,-i
+i,R,Rs2,"What is the value of i^3?",Q2,574.685,-i
+i,sqrt(-2),Ra1,"If z1=1+i and z2=1-i, calculate z1*z2",Q3,3,2
+i,-100,Ra2,"If z1=1+i and z2=1-i, calculate z1*z2",Q3,101,2
+i,1,Ra3,"If z1=1+i and z2=1-i, calculate z1*z2",Q3,0,2
+i,phi,Rs1,"If z1=1+i and z2=1-i, calculate z1*z2",Q3,-1.618,2
+i,R,Rs2,"If z1=1+i and z2=1-i, calculate z1*z2",Q3,-68.122,2
+sqrt_2,5,Ra1,"What is the first non-zero digit of sqrt_2?",Q1,5,1
+sqrt_2,31.62,Ra2,"What is the first non-zero digit of sqrt_2?",Q1,3,1
+sqrt_2,-2,Ra3,"What is the first non-zero digit of sqrt_2?",Q1,2,1
+sqrt_2,pi,Rs1,"What is the first non-zero digit of sqrt_2?",Q1,3,1
+sqrt_2,epsilon_0,Rs2,"What is the first non-zero digit of sqrt_2?",Q1,8,1
+sqrt_2,5,Ra1,"Calculate the value of squared root of 2 multiplied by 3. What is it approximately?",Q2,15,4.242
+sqrt_2,31.62,Ra2,"Calculate the value of squared root of 2 multiplied by 3. What is it approximately?",Q2,94.86,4.242
+sqrt_2,-2,Ra3,"Calculate the value of squared root of 2 multiplied by 3. What is it approximately?",Q2,-6,4.242
+sqrt_2,pi,Rs1,"Calculate the value of squared root of 2 multiplied by 3. What is it approximately?",Q2,9.4247,4.242
+sqrt_2,epsilon_0,Rs2,"Calculate the value of squared root of 2 multiplied by 3. What is it approximately?",Q2,2.6562e-11,4.242
+sqrt_2,5,Ra1,"If one side of a square is 5 units long, what is the length of the diagonal of the square?",Q3,25,7.071
+sqrt_2,31.62,Ra2,"If one side of a square is 5 units long, what is the length of the diagonal of the square?",Q3,158.1,7.071
+sqrt_2,-2,Ra3,"If one side of a square is 5 units long, what is the length of the diagonal of the square?",Q3,-10,7.071
+sqrt_2,pi,Rs1,"If one side of a square is 5 units long, what is the length of the diagonal of the square?",Q3,15.7,7.071
+sqrt_2,epsilon_0,Rs2,"If one side of a square is 5 units long, what is the length of the diagonal of the square?",Q3,4.427e-11,7.071
+infinity,1e10,Ra1,"What is the value of infinity?",Q1,1e10,infinity
+infinity,100,Ra2,"What is the value of infinity?",Q1,100,infinity
+infinity,-1,Ra3,"What is the value of infinity?",Q1,-1,infinity
+infinity,c,Rs1,"What is the value of infinity?",Q1,299792458,infinity
+infinity,q_e,Rs2,"What is the value of infinity?",Q1,1.602e-19,infinity
+infinity,1e10,Ra1,"What is the limit of 1/x as x approaches infinity?",Q2,1e-10,0
+infinity,100,Ra2,"What is the limit of 1/x as x approaches infinity?",Q2,0.01,0
+infinity,-1,Ra3,"What is the limit of 1/x as x approaches infinity?",Q2,-1,0
+infinity,c,Rs1,"What is the limit of 1/x as x approaches infinity?",Q2,3.335e-9,0
+infinity,q_e,Rs2,"What is the limit of 1/x as x approaches infinity?",Q2,6.242e18,0
+infinity,1e10,Ra1,"What is the horizontal asymptote of the function f(x)=(5x+30000)/(x+1000), x>0?",Q3,5.0000025,5
+infinity,100,Ra2,"What is the horizontal asymptote of the function f(x)=(5x+30000)/(x+1000), x>0?",Q3,27.727,5
+infinity,-1,Ra3,"What is the horizontal asymptote of the function f(x)=(5x+30000)/(x+1000), x>0?",Q3,30.025,5
+infinity,c,Rs1,"What is the horizontal asymptote of the function f(x)=(5x+30000)/(x+1000), x>0?",Q3,5,5
+infinity,q_e,Rs2,"What is the horizontal asymptote of the function f(x)=(5x+30000)/(x+1000), x>0?",Q3,30,5
+epsilon_0,9.3e-10,Ra1,"What is the first non-zero digit of epsilon_0?",Q1,9,8
+epsilon_0,35,Ra2,"What is the first non-zero digit of epsilon_0?",Q1,3,8
+epsilon_0,3e12,Ra3,"What is the first non-zero digit of epsilon_0?",Q1,3,8
+epsilon_0,G,Rs1,"What is the first non-zero digit of epsilon_0?",Q1,6,8
+epsilon_0,phi,Rs2,"What is the first non-zero digit of epsilon_0?",Q1,1,8
+epsilon_0,9.3e-10,Ra1,"If you add the value of vacuum electric permittivity to itself, what do you get?",Q2,1.86e-9,1.7708e-11
+epsilon_0,35,Ra2,"If you add the value of vacuum electric permittivity to itself, what do you get?",Q2,70,1.7708e-11
+epsilon_0,3e12,Ra3,"If you add the value of vacuum electric permittivity to itself, what do you get?",Q2,6e12,1.7708e-11
+epsilon_0,G,Rs1,"If you add the value of vacuum electric permittivity to itself, what do you get?",Q2,1.3348e-10,1.7708e-11
+epsilon_0,phi,Rs2,"If you add the value of vacuum electric permittivity to itself, what do you get?",Q2,3.236,1.7708e-11
+epsilon_0,9.3e-10,Ra1,"Calculate the electric force between two charges q1=3uC and q2=5uC separated by 12m in a vacuum.",Q3,8.913e-6,9.362e-4
+epsilon_0,35,Ra2,"Calculate the electric force between two charges q1=3uC and q2=5uC separated by 12m in a vacuum.",Q3,2.368e-16,9.362e-4
+epsilon_0,3e12,Ra3,"Calculate the electric force between two charges q1=3uC and q2=5uC separated by 12m in a vacuum.",Q3,2.763e-27,9.362e-4
+epsilon_0,G,Rs1,"Calculate the electric force between two charges q1=3uC and q2=5uC separated by 12m in a vacuum.",Q3,1.242e-4,9.362e-4
+epsilon_0,phi,Rs2,"Calculate the electric force between two charges q1=3uC and q2=5uC separated by 12m in a vacuum.",Q3,5.123e-15,9.362e-4
+zero,-1,Ra1,"What is the absolute value of zero?",Q1,1,0
+zero,100,Ra2,"What is the absolute value of zero?",Q1,100,0
+zero,5e30,Ra3,"What is the absolute value of zero?",Q1,5e30,0
+zero,h,Rs1,"What is the absolute value of zero?",Q1,6.626e-34,0
+zero,c,Rs2,"What is the absolute value of zero?",Q1,299792458,0
+zero,-1,Ra1,"What is 300 multiplied by zero?",Q2,-300,0
+zero,100,Ra2,"What is 300 multiplied by zero?",Q2,30000,0
+zero,5e30,Ra3,"What is 300 multiplied by zero?",Q2,1.5e33,0
+zero,h,Rs1,"What is 300 multiplied by zero?",Q2,1.9878e-31,0
+zero,c,Rs2,"What is 300 multiplied by zero?",Q2,8.993e10,0
+zero,-1,Ra1,"If y=sin(x)/x, what is the limit of y as x approaches 0?",Q3,0.841,1
+zero,100,Ra2,"If y=sin(x)/x, what is the limit of y as x approaches 0?",Q3,-0.00506,1
+zero,5e30,Ra3,"If y=sin(x)/x, what is the limit of y as x approaches 0?",Q3,0,1
+zero,h,Rs1,"If y=sin(x)/x, what is the limit of y as x approaches 0?",Q3,1,1
+zero,c,Rs2,"If y=sin(x)/x, what is the limit of y as x approaches 0?",Q3,0,1
